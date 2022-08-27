@@ -12,28 +12,86 @@
   --section-color: #f5f4fa;
   --header-color: #ffffff;
   /* Others*/
+  --focus-color: #188ce8;
+  --border-color: #ececec;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   background-color: var(--header-color);
+  letter-spacing: 0.03em;
 }
+/* Reset*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 li {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sections {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.conteiner {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 /*   HEADER     */
 .headr {
+  width: 1600px;
   background-color: var(--header-color);
+  border: 1px solid var(--border-color);
+}
+.hdr-cont {
+  display: flex;
+  align-items: center;
+  padding-left: 215px;
 }
 
+.hdr-nav {
+  margin-right: auto;
+}
+.hdr-list {
+  display: flex;
+  gap: 50px;
+}
+.hdr-listcont {
+  display: flex;
+  gap: 50px;
+}
+.hdr-list,
+.hdr-listcont {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .title {
-  font-family: 'Raleway';
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.2;
   text-decoration: none;
   color: var(--txt-color);
 }
@@ -46,14 +104,13 @@ li {
   color: var(--txt-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 .text_line:hover,
 .text_line:focus,
 .text_line:active {
   color: var(--button-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
@@ -61,121 +118,179 @@ li {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  color: var(--button-color);
+  color: var(--seconds-text);
   text-decoration: none;
+}
+.item_cont:hover,
+.item_cont:focus {
+  color: var(--button-color);
 }
 .item_cont_tel {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--seconds-text);
 }
+.item_cont_tel:hover,
+.item_cont_tel:focus {
+  color: var(--button-color);
+}
 /*SECTION-1*/
-.section {
+.sect {
   background-color: var(--backgfoot-color);
+  width: 1200px;
 }
 .subject {
-  font-style: normal;
+  height: 120px;
+  width: 696px;
+  margin: auto;
+  margin-bottom: 20px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   color: var(--header-color);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  width: 216px;
+  height: 50px;
+  display: block;
+  margin: auto;
   background-color: var(--button-color);
   color: var(--header-color);
   border: var(--button-color);
   border-radius: 4px;
+  cursor: pointer;
 }
-.btn:hover,.btn:focus{
+.btn:hover,
+.btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--focus-color);
   border-radius: 4px;
 }
 
 /*detail*/
 
-.detail {
-  background-color: var(--backgsection-color);
+.det-list {
+  display: flex;
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .subtitle {
-  font-style: normal;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--txt-color);
 }
 .text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--seconds-text);
 }
 
 /*we do*/
+.list-img {
+  display: flex;
+  gap: 30px;
+}
 .heading {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
+  margin-bottom: 50px;
   letter-spacing: 0.03em;
   color: var(--txt-color);
 }
 
 /*team*/
+.sect_two {
+  background-color: var(--section-color);
+}
 .heading_team {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
-  columns: var(--txt-color);
+  margin-bottom: 50px;
+  color: var(--txt-color);
+}
+.list-team {
+  display: flex;
+  gap: 30px;
+}
+.item-team {
+  background-color: var(--header-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
-  font-style: normal;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--txt-color);
+  background-color: var(--header-color);
 }
 .team-position {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--seconds-text);
+  background-color: var(--header-color);
 }
 
 /*foot*/
 .foot {
   background-color: var(--backgfoot-color);
 }
+.foot-cont {
+  margin-left: 215px;
+  padding-top: 60px;
+  
+}
+.foot-list{
+  margin-top: 20px;
+}
 .title-foot {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+
+  line-height: 1.2;
+
   text-decoration: none;
   color: var(--header-color);
 }
@@ -185,33 +300,49 @@ li {
 
 .link_foot {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.7;
   text-decoration: none;
+  padding-top: 20px;
   color: var(--header-color);
 }
 .list_cont {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/*      PORTOFOLIO        */
-.buttons {
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  color: var(--seconds-text);
+}
+.list_cont:hover,
+.list_cont:focus {
+  color: var(--button-color);
+}
+.item-foot {
+  margin-bottom: 9px;
+}
+/*      PORTOFOLIO        */
+.cont-btn {
+  
+  width: 1170px;
+}
+.cont-port-list {
+  display: flex;
+  gap: 8px;
+  justify-content:center;
+  margin-bottom: 50px;
+  
+}
+.buttons {
   font-weight: 550;
+  width: 125px;
+  height: 54px;
   font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-  border:var(--section-color);
+  line-height: 1.6;
+  border: var(--section-color);
   border-radius: 4px;
   background-color: var(--section-color);
   color: var(--txt-color);
+  cursor: pointer;
 }
 
 .buttons:hover,
@@ -222,44 +353,46 @@ li {
   border-radius: 4px;
   background-color: var(--button-color);
   border: var(--button-color);
-  color:var(--header-color)
+  color: var(--header-color);
+}
+.images {
+  margin-bottom: 20px;
 }
 
-.project{
-  font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 36px;
-letter-spacing: 0.06em;
-color: var(--txt-color);
+.proj-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.project {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--txt-color);
 }
 
-.uppertitle{
-  font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 30px;
-letter-spacing: 0.03em;
-color: var(--seconds-text);
+.uppertitle {
+  font-size: 16px;
+  line-height: 30px;
+
+  color: var(--seconds-text);
 }
-
-
-
-
-
-
-
-
-
-
 
 /* footer*/
+.foot {
+  width: 1200px;
+  height: 252px;
+}
+
 .title-foot-port {
-  text-decoration: none;
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  letter-spacing: 0.03em;
+
+  text-decoration: none;
   color: var(--header-color);
 }
