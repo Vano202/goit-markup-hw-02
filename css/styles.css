@@ -143,7 +143,7 @@ li {
 /*SECTION-1*/
 .sect {
   background-color: var(--backgfoot-color);
-  width: 1200px;
+  width: 1600px;
 }
 .subject {
   height: 120px;
@@ -382,7 +382,7 @@ li {
 
 /* footer*/
 .foot {
-  width: 1200px;
+  width: 1600px;
   height: 252px;
 }
 
